@@ -200,7 +200,6 @@ xmp {
 	        					<textarea style="height:120px;" id="context" name="context" class="form-control" defaultValue="&lt;Context path=&quot;&quot; docBase=&quot;&quot; reloadable=&quot;false&quot; crossContext=&quot;true&quot;&gt;&lt;/Context&gt;">&lt;Context path=&quot;&quot; docBase=&quot;&quot; reloadable=&quot;false&quot; crossContext=&quot;true&quot;&gt;&lt;/Context&gt;</textarea>
 	        					<div class="btn-group" role="group" style="margin-top:5px" id="pathBtns">
 								<button class="btn btn-default" path="${gitPath}" style="width:100px">Git</button>
-								<button class="btn btn-default" path="${myeclipsePath}" style="width:100px">MyEclipse</button>
 								<button class="btn btn-default" path="${tomcatsPath}" style="width:100px">webapps</button>
 							</div>
 							<img class="stateImg" style="display:none" id="contextImg" src="image/right.jpg" width="31px" height="31px" style="margin-left:5px"/>

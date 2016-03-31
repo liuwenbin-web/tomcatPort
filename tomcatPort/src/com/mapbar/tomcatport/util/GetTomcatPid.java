@@ -25,8 +25,23 @@ public class GetTomcatPid {
 		process.destroy();
 		return pid;
 	}
-
-	public static void main(String[] args) throws Exception {
-		System.out.println(getByTomcatName("apache-tomcat-r"));
+	/**
+	 * 执行cmd（shell）指令
+	 * @param cmd 需要执行的指令 如：netstat -ntlp等
+	 * @throws Exception
+	 */
+	public static void runCmd(String cmd) throws Exception {
+		String[] command = {"/bin/sh", "-c", cmd};
+		Process process = Runtime.getRuntime().exec(command);
+		InputStream is = process.getInputStream();
+		BufferedReader reader = new BufferedReader(new InputStreamReader(is));
+		String line;
+		while ((line = reader.readLine()) != null) {
+			line = line.trim();
+		}
+		process.waitFor();
+		is.close();
+		reader.close();
+		process.destroy();
 	}
 }

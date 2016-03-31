@@ -11,7 +11,7 @@ public class Constant {
 	public static String gitPath = "/Users/liuwenbin/git/";
 	
 	//myeclipse地址
-	public static String myeclipsePath = "/Users/liuwenbin/Workspaces/MyEclipse for Spring 10/";
+	//public static String myeclipsePath = "/Users/liuwenbin/Workspaces/MyEclipse for Spring 10/";
 	
 	//serFile
 	public static String serFile = "/mapbar/jar/tomcat.ser";

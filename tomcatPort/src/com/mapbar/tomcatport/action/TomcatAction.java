@@ -92,7 +92,6 @@ public class TomcatAction {
 		}
 		mav.addObject("gitPath", Constant.gitPath);
 		mav.addObject("tomcatsPath", Constant.tomcatsPath);
-		mav.addObject("myeclipsePath", Constant.myeclipsePath);
 		mav.addObject("sysConfig", Constant.sysconfigMap);
 		mav.addObject("vhostFileList",GetRightTomcatPort.vhostFileList);
 		mav.addObject("apachePath",Constant.apachePath);
